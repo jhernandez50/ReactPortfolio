@@ -7,6 +7,7 @@ import { About } from "./components/pages/About";
 import { BackEnd } from "./components/pages/BackEnd";
 import { FrontEnd } from "./components/pages/FrontEnd";
 import { Portfolio } from "./components/pages/Portfolio";
+import Footer from "./components/Footer";
 
 
 
@@ -16,12 +17,13 @@ function App() {
       <>
       <NavBar />
   <Routes>
-          <Route exact path='/' component= {Home} />
-          <Route path='/about' component={About} />
-          <Route path='/frontend' component={BackEnd} />
-          <Route path='/backend' component={FrontEnd} />
-          <Route path='/portfolio' component={Portfolio} />
+          <Route exact path='/' element= {<Home/>} />
+          <Route path='/about' element={<About/>} />
+          <Route path='/backend' element={<BackEnd/>} />
+          <Route path='/frontend' element={<FrontEnd/>} />
+          <Route path='/portfolio' element={<Portfolio/>} />
     </Routes>
+    <Footer />
   </>
     </Router>
 

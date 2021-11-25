@@ -52,7 +52,7 @@ function NavBar() {
             <li className="nav-item">
               <NavLink
                 exact
-                to="/fronend"
+                to="/frontend"
                 activeClassName="active"
                 className="nav-links"
                 onClick={handleClick}
