@@ -11,14 +11,15 @@ font-size: 20px;
 }
 
 .row {
-    align-items: center;
-    justify-content: center;
+align-items: center;
+display: flex;
+justify-content: center;
 width: 100%;
 align-items: center;
 }
 
 .column {
-    float: left;
+    float: center;
     width: 50%;
     padding: 10px;
     height: 300px; /* Should be removed. Only for demonstration */
